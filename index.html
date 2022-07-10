@@ -51,7 +51,11 @@
 		<section class="hero section">
 			<div class="conteiner">
 				<h1 class="title">Эффективные решения для вашего бизнеса</h1>
-				<button type="button" class="button primary">Заказать услугу</button>
+				<button type="button" class="button primary" data-modal-open>
+					<div>
+						<p>Заказать услугу</p>
+					</div>
+				</button>
 			</div>
 
 
@@ -88,11 +92,21 @@
 				<h2 class="title">Чем мы занимаемся</h2>
 				<ul class="work-list list">
 					<li class="item">
-						<img src="./images/box1.jpg" alt="разработчик печатает на клавиатуре код" width="370" height="300" />
+						<div class="work-box"><img src="./images/box1.jpg" alt="разработчик печатает на клавиатуре код" width="370" height="300" />
+							<p class="work-text text">Десктопные приложения</p>
+						</div>
 					</li>
-					<li class="item"><img src="./images/box2.jpg" alt="адоптация для мобильных устройств" width="370" height="300" /></li>
 					<li class="item">
-						<img src="./images/box3.jpg" alt="дизайнер рассматривает палитру цветов на планшете" width="370" height="300" />
+						<div class="work-box">
+							<img src="./images/box2.jpg" alt="адоптация для мобильных устройств" width="370" height="300" />
+							<p class="work-text text">Мобильные приложения</p>
+						</div>
+					</li>
+					<li class="item">
+						<div class="work-box">
+							<img src="./images/box3.jpg" alt="дизайнер рассматривает палитру цветов на планшете" width="370" height="300" />
+							<p class="work-text text">Дизайнерские решения</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -366,6 +380,16 @@
 
 
 	</footer>
+
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button class="close-btn button" data-modal-close>
+				<svg class=icon-close width="18" height="18">
+					<use href="./images/sprite.svg#close-icon"></use>
+				</svg></button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
