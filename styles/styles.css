@@ -308,6 +308,9 @@ img {
 }
 
 .work-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	line-height: 1.14;
 	font-weight: 700;
@@ -315,8 +318,7 @@ img {
 	color: var(--secondary-text-white);
 	background: rgba(47, 48, 58, 0.8);
 	width: 100%;
-	padding: 27px 0;
-	text-align: center;
+	height: 70px;
 	bottom: 0;
 }
 
@@ -634,8 +636,8 @@ img {
 	font-weight: 400;
 }
 
-.project-tumb:hover .overlay,
-.project-tumb:focus .overlay {
+.project-list .item:hover .overlay,
+.project-list .item:focus .overlay {
 	transform: translateY(0%);
 }
 
